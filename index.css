@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap');
+
+* {
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+     font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+     background-color: black;
+}
+
+.main {
+     background-image: url("IN-en-20240115-trifectadaily-perspective_alpha_website_small.jpg");
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: max(1550px, 100vw);
+     height: 530px;
+     position: relative;
+}
+
+.box {
+     opacity: 0.44;
+     height: 530px;
+     width: 100%;
+     background-color: black;
+     position: absolute;
+     top: 0;
+}
+
+nav {
+     display: flex;
+     margin: auto;
+     max-width: 700px;
+     height: 80px;
+     justify-content: space-between;
+     align-items: center;
+}
+
+nav img {
+     position: relative;
+     z-index: 10;
+}
+
+nav button {
+     z-index: 10;
+     position: relative;
+
+}
+
+.heading {
+     height: calc(100% - 80px);
+     align-items: center;
+     justify-content: center;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     font-family: 'Martel Sans', sans-serif;
+     gap: 21px;
+     /* padding: 0 30px; */
+}
+
+.heading> :first-child {
+     font-size: 45px;
+     font-weight: 900;
+     text-align: center;
+}
+
+.heading> :nth-child(2) {
+     font-size: 20px;
+     font-weight: 400;
+     text-align: center;
+
+}
+
+.heading> :nth-child(3) {
+     font-size: 20px;
+     font-weight: 400;
+     text-align: center;
+
+}
+
+.seperation {
+     background-color: gray;
+     height: 4px;
+     position: relative;
+     z-index: 10;
+}
+
+.btn {
+     padding: 5px 28px;
+     font-weight: bold;
+     color: white;
+     background-color: rgba(23, 23, 23, 0);
+     border: 1px solid rgba(255, 255, 255, 0.274);
+     border-radius: 4px;
+
+}
+
+.btn-red-sm {
+     background-color: rgb(236, 5, 5);
+     color: white;
+     border: 1px solid red;
+     border-radius: 5px;
+     padding: 7px 7px;
+
+}
+
+.btn-red {
+     background-color: rgb(236, 5, 5);
+     color: white;
+     border: 1px solid red;
+     border-radius: 5px;
+     padding: 12px 40px;
+     font-size: 20px;
+
+}
+
+.heading-buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 5px;
+}
+
+.main input {
+     padding: 14px 200px 20px 16px;
+     font-size: 12px;
+     background-color: rgba(23, 23, 23, 0.7);
+     border-radius: 9px;
+     border: 1px solid rgb(207, 182, 182);
+}
+
+.main input::placeholder {
+     color: white;
+}
+
+.first {
+     display: flex;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+     max-width: 70vw;
+}
+
+.secimg {
+     position: relative;
+
+}
+
+.secimg img {
+     position: relative;
+     z-index: 1;
+     width: 475px;
+}
+
+.secimg video {
+     position: absolute;
+     top: 51px;
+     right: 28px;
+     width: 388px;
+     object-fit: cover;
+
+}
+
+section.first>div {
+     display: flex;
+     flex-direction: column;
+}
+
+section.first>div :first-child {
+     font-size: 48px;
+     font-weight: bolder;
+ }
+
+section.first>div :nth-child(2) {
+     font-size: 24px;
+}
+
+.third video {
+     right: 91px;
+     width: 295px;
+}
+
+.faq {
+     color: white;
+     padding: 0px 0px 85px 0px;
+
+}
+
+.faq h1 {
+     text-align: center;
+     padding: 85px 0px 30px 0px;
+     font-size: 50px;
+}
+
+.faqbox {
+     display: flex;
+     background-color: rgba(68, 67, 67, 0.7);
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px 30px;
+     margin: 7px auto;
+     width: 70%;
+     font-size: 24px;
+     font-weight: 400;
+}
+
+.faqbox:hover {
+     background-color: rgba(104, 101, 101, 0.7);
+     ;
+}
+
+.faq h3 {
+     text-align: center;
+     padding: 46px 0px 15px 0px;
+     font-weight: 400;
+}
+
+.faq input {
+     padding: 14px 200px 20px 16px;
+     font-size: 12px;
+     background-color: rgba(23, 23, 23, 0.7);
+     border-radius: 9px;
+     border: 1px solid rgb(207, 182, 182);
+}
+
+/* footer ke liye flex-box ka bhi use kar skate hai */
+
+/* .footer{
+     color: white;
+     display: flex;
+     flex-direction: row;
+     font-weight: 400;
+     padding: 30px 0px 900px 0px;
+     align-items: center;
+     justify-content: space-evenly;
+     font-size: 14px;
+     margin: auto;
+     max-width: 80%;
+}
+
+.firstrow{
+     display: flex;
+     flex-direction: column;
+     gap: 23px;
+}
+.firstrow a{
+     color: rgba(255, 255, 255, 0.7);
+
+}
+ */
+
+
+/* Footer by using the grid layout to make easyresponsive */
+
+footer{
+     color: white;
+     margin: auto;
+     max-width: 80vw;
+     padding: 14px;
+}
+.Question, .Question a{
+     padding: 34px 0px;
+     color: white;
+}
+.footer {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     color: whitesmoke;
+}
+
+.footer-item{
+     display: flex;
+     flex-direction: column;
+     gap: 23px;
+}
+
+.footer-item a{
+     color: white;
+     font-size: 14px;
+
+}
+
+
+/* Media query for making website resposive and device compatible */
+
+
+@media screen and (max-width: 1300px) {
+
+    
+     html, body {
+          max-width: 100%;
+          overflow-x: hidden;
+      }
+
+     .heading> :first-child{
+          font-size: 30px;
+     }
+
+     .heading-buttons {
+          flex-wrap: wrap;
+     }
+
+
+     .first {
+          flex-wrap: wrap;
+     }
+
+     section.first>div {
+          text-align: center;
+          justify-content: center;
+     }
+
+    
+     section.first>div :first-child {
+          font-size: 33px;
+          padding: 30px 0px 0px 0px;
+          
+      }
+
+     section.first>div :nth-child(2) {
+          font-size: 18px;
+          padding: 30px 0px 0px 0px;
+     }
+
+     .videos video{
+          top: 93px;
+          width: 383px;
+     }
+
+     .footer{
+     grid-template-columns: repeat(2, 1fr);
+     }
+     .footer-item{
+          gap: 25px;
+     }
+}
